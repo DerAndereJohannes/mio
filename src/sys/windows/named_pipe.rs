@@ -494,7 +494,7 @@ impl FromRawHandle for NamedPipe {
                     connect_error: None,
                 }),
                 pool: Mutex::new(BufferPool::with_capacity(2)),
-                default_buf_size: AtomicUsize::new(4 * 1024),
+                default_buf_size: AtomicUsize::new(1),
             }),
         }
     }
